@@ -1,2 +1,2 @@
 # eunanomist.github.com
-Sophie Jang Blog
+Let's review and reproduce 
