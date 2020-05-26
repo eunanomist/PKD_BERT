@@ -7,7 +7,8 @@
 * Student model *patiently* learns from multiple intermediate layers of the teacher model for incremental knowledge extraction
   - PKD_Last : learning from the last *k* layers
   - PKD_Skip : learning from every *k* layers
-
+* these 2 ways of PKD enble the exploitation of rich information in the teacher's hidden layers, and encourage the student model to *patiently* learn from and imitate the teacher through a multilayer distillation process.
+* Improved results without sacrificing model accuracy
 
  ### **1. Introduction**
  ### **2. Related Work**
