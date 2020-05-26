@@ -19,6 +19,7 @@
     - PKD_Skip : the student learns from every *k* layers of the teacher, suggesting that the lower layers of the teacher network also contain important information and should be passed along for incremental distillation.
 ### **2. Related Work**
 ### **3. Patient Knowledge Distillation**
+   * $f(x) = x^2$ is an example. 
 ### **4. Experiments**
 ### **5. Conclusion** 
 
