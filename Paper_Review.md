@@ -22,6 +22,10 @@
    * 
 ### **4. Experiments**
 ### **5. Conclusion** 
+   * They propose a novel approach to compressing a large BERT model into a shallow one via Patient Knowledge Distillation.
+   * To fully utilize the rich information in deep structure of the teacher network, our Patient-KD approach encourages the student model to patiently learn from the teacher through a multi-layer distillation process.
+   * Extensive experiments over four NLP tasks demonstrate the effectiveness of our proposed model.
+   * For the Future work : plan to pre-train BERT from scratch to address the initialization mismatch issue, and potentially modify the proposed method such that it could also help during pre-training.
 
 * Post2
 * Post3
