@@ -65,26 +65,26 @@ Problem Define : The student model to imitate outputs from the teacher model on 
       
 ![Picture2](https://user-images.githubusercontent.com/65929463/84465359-c1de9480-acb1-11ea-9ba1-727289fa70a4.jpg)
 
-   - Propose Two Patient Distillation Strategies
+   * Propose Two Patient Distillation Strategies
        - PKD-Skip: the student learns from every k layers of the teacher
        - PKD-Last: the student learns from the last k layers of the teacher
-      - Because of Expensive and Introduce noise
+   * Because of Expensive and Introduce noise
        - BERT : the output from the last layer’s [CLS] token.
        - SDNet : a weighted average of all layers’ [CLS] embeddings is applied.
-      - When model compression is performed, learning the expression of the middle layer of [CLS] will likely increase the generalization ability.
+   * When model compression is performed, learning the expression of the middle layer of [CLS] will likely increase the generalization ability.
 
 ![Picture3](https://user-images.githubusercontent.com/65929463/84465372-c86d0c00-acb1-11ea-9dda-1b7c3a14672b.jpg)
 
-Middle layer for Knowledge distillation                                          
+* Middle layer for Knowledge distillation                                          
 
 ![Picture4](https://user-images.githubusercontent.com/65929463/84465374-ca36cf80-acb1-11ea-9696-3a68a9afc0e6.jpg)
 
-PKD loss is defined as MSE (M = # of student layers)
+* PKD loss is defined as MSE (M = # of student layers)
 
 
 ![Picture5](https://user-images.githubusercontent.com/65929463/84465381-ce62ed00-acb1-11ea-8e14-689c35ef1fff.jpg)
 
-The final objective function can be formulated
+* The final objective function can be formulated
 
 ![Picture6](https://user-images.githubusercontent.com/65929463/84465385-d0c54700-acb1-11ea-9c96-44297b506a63.jpg)
 
@@ -95,7 +95,7 @@ The final objective function can be formulated
    * 4.2 Baselines and Training Details
       - Use the same architecture in the original BERT, and fine-tune each task independently.
       - BERT12 = BERT-Base, and Use 3 and 6 layers of Transformers as the Student models. 
-      - # of hidden units in the final softmax layer = 768
+      - number of hidden units in the final softmax layer = 768
       - Batch Size = 32
       - Number of Epoch = 4 
       - Learning rate = (5e-5, 2e-5, 1e-5)
