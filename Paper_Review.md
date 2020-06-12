@@ -1,6 +1,27 @@
 # Patient Knowledge Distillation for BERT Model Compression(2019-EMNLP)
 ## Paper Review
 
+### **Contents**
+
+Abstract
+Introduction
+Related Work
+Language Model Pre-training
+Model Compression & Knowledge Distillation
+3. Patient Knowledge Distillation
+3.1 Distillation Objective
+3.2 Patient Teacher for Model Compression
+4. Experiments
+4.1 Datasets
+4.2 Baselines and Training Details
+4.3 Experimental Results
+4.4 Analysis of Model Efficiency
+4.5 Does a Better Teacher Help?
+5. Conclusion
+
+
+
+
 ### **Abstract**
  * Pretrained language models like BERT is highly effective for NLP, But high demand for computing resources in trianing models hinders application in proctice.
  * PDK approach to compress an original large model(teacher) into an equally effective lightweight shallow network(student).
