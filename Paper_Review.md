@@ -38,7 +38,18 @@ Model Compression & Knowledge Distillation
   * Instead of learning parameters from only the last layer of the teacher, they encourage the student model to extract knowlegde also from previous layers of the teacher network. this is PKD which has rich information through the deep structure of the teacher network for multi-layer knowledge distillation.
     - PKD_Last : the student learns form the last *k* layers of the teacher, under assumption that the top layers of the original network contain the most informatice knowledge to teach the student.
     - PKD_Skip : the student learns from every *k* layers of the teacher, suggesting that the lower layers of the teacher network also contain important information and should be passed along for incremental distillation.
+    
 ### **2. Related Work**
+   * Language Model Pre training
+      - Feature based approach – Context independent word representation, Sentence level representation, contextualized word           representation
+      - Fine tuning approach – GPT, BERT etc. training labeled data when downstream task 
+   * Model Compression & Knowledge Distillation
+      - Network pruning 
+      - Weight quantization 
+      - Knowledge Distillation (in 2015 by Hinton, to compress large parameters into a model that can be executed quickly. The compact model mimics the soft output of the existing model. Romero 2015 shows that learning a medium model representation of a small model is also a way to improve performance during the learning process)
+
+
+
 ### **3. Patient Knowledge Distillation**
 ### **4. Experiments**
 ### **5. Conclusion** 
