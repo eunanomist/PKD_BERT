@@ -52,9 +52,25 @@ Model Compression & Knowledge Distillation
       
 ### **3. Patient Knowledge Distillation**
 Problem Define : The student model to imitate outputs from the teacher model on the training dataset with a defined objective
-
+   * 3.1 Distillation Objective
+      - Teacher = deep bidirectional encoder, Student = lightweight model with fewer layers
+      - BERT-Base = BERT(12), BERT-Large = BERT(24), BERT-K layers = BERT(k)
+      - Final object for knowledge distillation 
 ![Picture1](https://user-images.githubusercontent.com/65929463/84465351-be4b0d80-acb1-11ea-9271-a5db165d8823.jpg)
+
+   * 3.2 Patient Teacher for Model Compression
+      - Student network can achieve comparable performance to the teacher model on the Training Set. But, Learned with Vanilla KD can reach Saturation on Test Set. 
+      - One hypothesis = Overfitting during knowledge distillation may lead to poor generalization
 ![Picture2](https://user-images.githubusercontent.com/65929463/84465359-c1de9480-acb1-11ea-9ba1-727289fa70a4.jpg)
+
+      - Propose Two Patient Distillation Strategies
+         - PKD-Skip: the student learns from every k layers of the teacher
+         - PKD-Last: the student learns from the last k layers of the teacher
+      - Because of Expensive and Introduce noise
+         - BERT : the output from the last layer’s [CLS] token.
+         - SDNet : a weighted average of all layers’ [CLS] embeddings is applied.
+      - When model compression is performed, learning the expression of the middle layer of [CLS] will likely increase the generalization ability.
+
 ![Picture3](https://user-images.githubusercontent.com/65929463/84465372-c86d0c00-acb1-11ea-9dda-1b7c3a14672b.jpg)
 ![Picture4](https://user-images.githubusercontent.com/65929463/84465374-ca36cf80-acb1-11ea-9696-3a68a9afc0e6.jpg)
 ![Picture5](https://user-images.githubusercontent.com/65929463/84465381-ce62ed00-acb1-11ea-8e14-689c35ef1fff.jpg)
