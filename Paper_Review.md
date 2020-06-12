@@ -53,7 +53,18 @@ Model Compression & Knowledge Distillation
 ### **3. Patient Knowledge Distillation**
 Problem Define : The student model to imitate outputs from the teacher model on the training dataset with a defined objective
 
-![Picture1](./image/Picture1.jpg)
+![Picture1](https://user-images.githubusercontent.com/65929463/84465351-be4b0d80-acb1-11ea-9271-a5db165d8823.jpg)
+![Picture2](https://user-images.githubusercontent.com/65929463/84465359-c1de9480-acb1-11ea-9ba1-727289fa70a4.jpg)
+![Picture3](https://user-images.githubusercontent.com/65929463/84465372-c86d0c00-acb1-11ea-9dda-1b7c3a14672b.jpg)
+![Picture4](https://user-images.githubusercontent.com/65929463/84465374-ca36cf80-acb1-11ea-9696-3a68a9afc0e6.jpg)
+![Picture5](https://user-images.githubusercontent.com/65929463/84465381-ce62ed00-acb1-11ea-8e14-689c35ef1fff.jpg)
+![Picture6](https://user-images.githubusercontent.com/65929463/84465385-d0c54700-acb1-11ea-9c96-44297b506a63.jpg)
+![Picture7](https://user-images.githubusercontent.com/65929463/84465390-d3c03780-acb1-11ea-87c9-dd8d3af36f5a.jpg)
+![Picture8](https://user-images.githubusercontent.com/65929463/84465393-d589fb00-acb1-11ea-941d-e7129a009e39.jpg)
+![Picture9](https://user-images.githubusercontent.com/65929463/84465397-d884eb80-acb1-11ea-8049-6a2ee8890cb9.jpg)
+![Picture10](https://user-images.githubusercontent.com/65929463/84465404-da4eaf00-acb1-11ea-9833-542587054040.jpg)
+![Picture11](https://user-images.githubusercontent.com/65929463/84465407-dd499f80-acb1-11ea-8b3c-720b73a82a44.jpg)
+
 
 ### **4. Experiments**
 ### **5. Conclusion** 
