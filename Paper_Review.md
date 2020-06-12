@@ -65,12 +65,12 @@ Problem Define : The student model to imitate outputs from the teacher model on 
       
 ![Picture2](https://user-images.githubusercontent.com/65929463/84465359-c1de9480-acb1-11ea-9ba1-727289fa70a4.jpg)
 
-      - Propose Two Patient Distillation Strategies
-         - PKD-Skip: the student learns from every k layers of the teacher
-         - PKD-Last: the student learns from the last k layers of the teacher
+   - Propose Two Patient Distillation Strategies
+       - PKD-Skip: the student learns from every k layers of the teacher
+       - PKD-Last: the student learns from the last k layers of the teacher
       - Because of Expensive and Introduce noise
-         - BERT : the output from the last layer’s [CLS] token.
-         - SDNet : a weighted average of all layers’ [CLS] embeddings is applied.
+       - BERT : the output from the last layer’s [CLS] token.
+       - SDNet : a weighted average of all layers’ [CLS] embeddings is applied.
       - When model compression is performed, learning the expression of the middle layer of [CLS] will likely increase the generalization ability.
 
 ![Picture3](https://user-images.githubusercontent.com/65929463/84465372-c86d0c00-acb1-11ea-9dda-1b7c3a14672b.jpg)
