@@ -47,10 +47,14 @@ Model Compression & Knowledge Distillation
       - Network pruning 
       - Weight quantization 
       - Knowledge Distillation (in 2015 by Hinton, to compress large parameters into a model that can be executed quickly. The compact model mimics the soft output of the existing model. Romero 2015 shows that learning a medium model representation of a small model is also a way to improve performance during the learning process)
-
-
-
+      
+      ***In this paper, effectively compress the teacher model into the student model using the method called Patient knowledge distillation.***
+      
 ### **3. Patient Knowledge Distillation**
+Problem Define : The student model to imitate outputs from the teacher model on the training dataset with a defined objective
+
+![Picture1](./image/Picture1.jpg)
+
 ### **4. Experiments**
 ### **5. Conclusion** 
    * They propose a novel approach to compressing a large BERT model into a shallow one via Patient Knowledge Distillation.
