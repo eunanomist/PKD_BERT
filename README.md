@@ -1,5 +1,6 @@
 # Patient Knowledge Distillation for BERT Model Compression
 Knowledge distillation for BERT model
+- data 폴더는 아래 지시에 따라 만들기, Apex 잘 설치하기! 
 
 
 ## Installation
